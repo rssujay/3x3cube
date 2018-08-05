@@ -18,9 +18,39 @@ class Piece:
         self.cz = cz
 
     def status(self):
-        print("x,y,z", self.x, self.y, self.z, "colour", self.cx,self.cy,self.cz)
+        return (self.x, self.y, self.z, self.cx, self.cy, self.cz)
 
-#use completed pieces for default cube, if you wish to re-generate using new colours, clear the dict, i.e. completed_pieces = []
+    def status_2d(self,axis):
+        if axis == "x":
+            return (self.cx, "y = " + str(self.y), "z = " + str(self.z))            
+        elif axis == "y":
+            return (self.cy, "x = " + str(self.x), "z = " + str(self.z))           
+        else:
+            return (self.cz, "x = " + str(self.x), "y = " + str(self.y))
+        
+
+    def get_coordinate(self,axis):
+        if axis == "x":
+            coord = self.x            
+        elif axis == "y":
+            coord = self.y            
+        else:
+            coord = self.z
+        return coord
+
+    def get_colour(self,axis):
+        if axis == "x":
+            colour = self.cx            
+        elif axis == "y":
+            colour = self.cy            
+        else:
+            colour = self.cz
+        return colour
+
+        
+            
+
+#use completed pieces for default cube, if you wish to re-generate using new colours, clear the list, i.e. completed_pieces = []
 # do note that this will require your input in assembling the cube piece by piece
 completed_pieces = [Piece(-1,-1,-1,'red','blue','white'),
                     Piece(-1,-1,0,'red','blue',None),
@@ -134,7 +164,7 @@ def initialize():
     without requiring manual user input
     """
     if completed_pieces:
-        print("Using pre-assembled default cube!")
+        print("Using pre-assembled default cube pieces!\nYou can call the cube pieces using the variable 'cube_pieces'")
         return completed_pieces
 
     else:
@@ -155,7 +185,7 @@ def initialize():
             while not sorted(list(filter(lambda x: x != "None",ans))) in combis:
                 print(sorted(list(filter(lambda x: x != "None",ans))))
 
-                #print("You will need to try again if you enter an invalid combination! Enter "None" if that axis has no visible colour sticker \n\n")
+                print("You will need to try again if you enter an invalid combination! Enter "None" if that axis has no visible colour sticker \n\n")
                 ans = []
 
                 print("You can choose from the following valid combinations \n\n",combis,"\n")
