@@ -26,8 +26,10 @@ using XYZ coordinates and the stickers on each of its axis.
 
 5) A cube class and a colour class (for the different representations detailed below).
 
+6) Basic printcube methods which output a text-based representation of the current state of the cube.
+
 What needs to be worked on:
 
-1) Two work-in-progress representations of the Rubik's cube, which are currently lacking a working rotation function.
+1) Two work-in-progress representations of the Rubik's cube, which are currently lacking working rotation functions.
 
 Thank you for reading and have a nice day! criticism/suggestions/bug reports are welcome.
