@@ -185,7 +185,7 @@ def initialize():
             while not sorted(list(filter(lambda x: x != "None",ans))) in combis:
                 print(sorted(list(filter(lambda x: x != "None",ans))))
 
-                print("You will need to try again if you enter an invalid combination! Enter "None" if that axis has no visible colour sticker \n\n")
+                print("You will need to try again if you enter an invalid combination! Enter 'None' if that axis has no visible colour sticker \n\n")
                 ans = []
 
                 print("You can choose from the following valid combinations \n\n",combis,"\n")
