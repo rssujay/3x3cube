@@ -4,10 +4,9 @@ A simple first project inspired by the well-known 3x3 Rubik's Cube
 
 How to open: Open rubiks_cube.py with auxillary_fns.py in the same folder.
 
-
 The aim of this project is to build an appropriate representation for the Rubik's Cube such that further extensions,
 such as a solver AI or GUIs, can be made for the purposes of learning or trying out cubing on the computer. As this
-is a beginner project, there will be minimal use of imported modules which may be helpful (numPy arrays comes to mind).
+is a beginner project, there will be minimal use of imported modules which may be helpful (such as numPy arrays).
 
 This is a project designed to learn functional and object-oriented programming basics, efficiency of code is likely to be compromised
 during the coding process.
@@ -28,8 +27,12 @@ using XYZ coordinates and the stickers on each of its axis.
 
 6) Basic printcube methods which output a text-based representation of the current state of the cube.
 
-What needs to be worked on:
+7) A fully working coordinate system based representation of a rubik's cube with face rotation and perspective rotation support!
 
-1) Two work-in-progress representations of the Rubik's cube, which are currently lacking working rotation functions.
+Further improvements/ideas:
+
+1) Complete the alternative 2D array representation (rubiks_cube_alternative.py).
+
+2) Additional functionalities - graphics, cube randomizer (using random module), cube solver
 
 Thank you for reading and have a nice day! criticism/suggestions/bug reports are welcome.
