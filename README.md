@@ -1,6 +1,6 @@
-# 3x3cubebuilder
+# 3x3cube
 This project is coded in Python 3.6+.
-A simple first project inspired by the well-known 3x3 Rubik's Cube.
+A project inspired by the well-known 3x3 Rubik's Cube.
 
 Requirements: Python 3.6+, pygame module
 
@@ -30,4 +30,4 @@ Further improvements/ideas:
 
 2) Additional functionalities - cube randomizer (using random module), cube solver
 
-Thank you for reading and have a nice day! criticism/suggestions/pull requests are welcome.
+Thank you for reading and have a nice day!
