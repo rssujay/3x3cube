@@ -164,7 +164,7 @@ def initialize():
     without requiring manual user input
     """
     if completed_pieces:
-        print("Using pre-assembled default cube pieces!\nYou can call the cube pieces using the variable 'cube_pieces'")
+        print("Using pre-assembled default cube pieces!\n")
         return completed_pieces
 
     else:

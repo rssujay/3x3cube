@@ -2,8 +2,8 @@ from auxillary_fns import *
 
 cube_pieces = initialize() #change colours as required in auxillary_fns.py (please clear the completed list too if doing so, otherwise changes will not take effect)
 
-print("\nInitialize the cube using variable = Cube(cube_pieces), Cube methods are:\nprintcube()\nrotate(self,face,opp)\nrotate_cube()\n")
-print("For rotate, face can be str(F or B or U or D or R or L) and opposite should be True if an inverse rotation is required.")
+#print("\nInitialize the cube using variable = Cube(cube_pieces), Cube methods are:\nprintcube()\nrotate(self,face,opp)\nrotate_cube()\n")
+#print("For rotate, face can be str(F or B or U or D or R or L) and opposite should be True if an inverse rotation is required.")
 
 """
 Representation #1 - completed
@@ -20,7 +20,6 @@ class Cube:
     def printcube(self):
         print("Taking reference from front-bottom-left corner of cube as (-1,-1,-1)\n")
         
-        faces = []
         axis = ("x","y","z")
                 
         for i in (-1,1):
@@ -190,15 +189,10 @@ class Cube:
             eval(face + "()")
 
 
-    def rotate_cube(self):
+    def rotate_cube(self,axis):
         """
         This is to rotate the whole cube
         """
-        axis = 0
-
-        while axis not in ["x","y","z"]:
-            axis = input("Enter the axis (x,y or z) to rotate along:")
-
         for i in range(-1,2):
             if axis == "x":
                 self.rotate_x_plane(i)
