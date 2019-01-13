@@ -4,6 +4,8 @@ A project inspired by the well-known 3x3 Rubik's Cube.
 
 Requirements: Python 3.6+, pygame module
 
+![Picture of GUI](gui.PNG)
+
 Instructions: 
 1) run rubiks_cube_gui.py
 2) Use arrow keys for rotation of the whole cube
